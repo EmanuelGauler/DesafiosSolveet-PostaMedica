@@ -1,0 +1,22 @@
+
+#ifndef DIAGNOSISTREATED_H
+#define DIAGNOSISTREATED_H
+#include <string>
+#include <vector>
+#include <map>
+
+typedef std::string Diagnostics;
+struct DiagnosisTreated {
+  std::vector<std::string> diagnostics {
+    "Gastroenteritis", "Tuberculosis", "Anorexia", "Reumatismo", "Otras patologías"
+  };
+
+  void log_diagnosis_quantity( Diagnostics const&, int const& );
+  int patients_quantity() const;
+  float statistics_for_diagnosis( Diagnostics const& ) const;
+  DiagnosisTreated();
+  
+  private:
+  std::map<std::string, int> diagnosed;
+};
+#endif // DIAGNOSISTREATED_H
