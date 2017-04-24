@@ -21,9 +21,6 @@
  */
 #include <iostream>
 #include <iomanip>
-#include <algorithm>
-#include <map>
-#include <vector>
 #include "DiagnosisTreated"
 using namespace std;
 
